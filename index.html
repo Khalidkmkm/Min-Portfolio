@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/> 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Khalid Mahmoud - Web Developer Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+          <h3>Hello, It's Me</h3>
+          <h1>Khalid Mahmoud</h1>
+          <h3>And I'm a <span class="multiple-text"></span></h3>
+          <p>I'm a passionate web developer student with a focus on creating beautiful and functional web experiences.</p>
+          <div class="home-sci">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <div class="btn-box">
+            <a href="#about" class="btn">More About Me</a>
+          </div>
+      </div>
+      <div class="profile-container">
+        <img src="./src/assets/bild1.jpg" alt="Khalid Mahmoud" loading="lazy">
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="heading">About <span>Me</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Web Developer</h3>
+          <p>I am a dedicated web development student with a passion for creating modern and user-friendly websites. My journey in web development started with a strong interest in both design and technology. I believe in writing clean, efficient code and creating intuitive user experiences.</p>
+          <div class="btn-box">
+            <a href="#" class="btn" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="skills-container">
+        <div class="skills-box">
+          <h3>Frontend Development</h3>
+          <div class="skills-content">
+            <div class="progress">
+              <h3>HTML <span>90%</span></h3>
+              <div class="bar"><span style="width: 90%"></span></div>
+            </div>
+            <div class="progress">
+              <h3>CSS <span>85%</span></h3>
+              <div class="bar"><span style="width: 85%"></span></div>
+            </div>
+            <div class="progress">
+              <h3>JavaScript <span>75%</span></h3>
+              <div class="bar"><span style="width: 75%"></span></div>
+            </div>
+            <div class="progress">
+              <h3>React <span>70%</span></h3>
+              <div class="bar"><span style="width: 70%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="projects-container">
+        <div class="projects-box">
+          <img src="src/assets/project1.jpg" alt="Project 1" loading="lazy">
+          <div class="projects-layer">
+            <h4>Web Design</h4>
+            <p>Description of your first project goes here</p>
+            <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="projects-box">
+          <img src="src/assets/project2.jpg" alt="Project 2" loading="lazy">
+          <div class="projects-layer">
+            <h4>Web Application</h4>
+            <p>Description of your second project goes here</p>
+            <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="projects-box">
+          <img src="src/assets/project3.jpg" alt="Project 3" loading="lazy">
+          <div class="projects-layer">
+            <h4>Web Development</h4>
+            <p>Description of your third project goes here</p>
+            <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form action="#" method="POST">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-box">
+          <input type="tel" placeholder="Mobile Number">
+          <input type="text" placeholder="Subject" required>
+        </div>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Khalid Mahmoud | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
