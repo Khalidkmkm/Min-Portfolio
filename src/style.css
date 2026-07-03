@@ -320,6 +320,7 @@ em {
 }
 
 .skill-card {
+  border-top: 1px solid var(--line);
   border-right: 1px solid var(--line);
   min-height: 250px;
   padding: 28px 24px 15px 0;
@@ -329,7 +330,7 @@ em {
   padding-left: 24px;
 }
 
-.skill-card:last-child {
+.skill-card:nth-child(4n) {
   border-right: 0;
 }
 
@@ -403,6 +404,18 @@ em {
 
 .project-visual-three {
   background: #c9d4dc;
+}
+
+.project-visual-four {
+  background: #d8d1bd;
+}
+
+.project-visual-five {
+  background: #d7c8d9;
+}
+
+.project-visual-six {
+  background: #c7d9d5;
 }
 
 .project-visual span,
@@ -618,13 +631,12 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .skill-card:nth-child(2) {
+  .skill-card:nth-child(2n) {
     border-right: 0;
   }
 
-  .skill-card:nth-child(3),
-  .skill-card:nth-child(4) {
-    border-top: 1px solid var(--line);
+  .skill-card:nth-child(4n) {
+    border-right: 0;
   }
 
   .project-list {
@@ -662,7 +674,7 @@ footer {
   }
 
   .skill-card:first-child {
-    border-top: 0;
+    border-top: 1px solid var(--line);
   }
 
   .skill-card h3 {
