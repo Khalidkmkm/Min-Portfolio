@@ -1,144 +1,196 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/> 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Khalid Mahmoud - Web Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Khalid Mahmoud är frontendutvecklare med fokus på enkla, tillgängliga och användarvänliga webbupplevelser."
+    />
+    <meta name="theme-color" content="#f5f2ec" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Khalid Mahmoud — Frontendutvecklare</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <header class="site-header">
+      <a class="logo" href="#start" aria-label="Till startsidan">Khalid Mahmoud<span></span></a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-menu">
+        <span></span>
+        <span></span>
+        <span class="sr-only">Öppna meny</span>
+      </button>
+
+      <nav class="nav" id="main-menu" aria-label="Huvudmeny">
+        <a href="#om">Om mig</a>
+        <a href="#kompetenser">Kompetenser</a>
+        <a href="#projekt">Projekt</a>
+        <a class="nav-contact" href="#kontakt">Kontakt</a>
       </nav>
     </header>
 
-    <section class="home" id="home">
-      <div class="home-content">
-          <h3>Hello, It's Me</h3>
-          <h1>Khalid Mahmoud</h1>
-          <h3>And I'm a <span class="multiple-text"></span></h3>
-          <p>I'm a passionate web developer student with a focus on creating beautiful and functional web experiences.</p>
-          <div class="home-sci">
-            <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          </div>
-          <div class="btn-box">
-            <a href="#about" class="btn">More About Me</a>
-          </div>
-      </div>
-      <div class="profile-container">
-        <img src="./src/assets/bild1.jpg" alt="Khalid Mahmoud" loading="lazy">
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <h2 class="heading">About <span>Me</span></h2>
-      <div class="about-content">
-        <div class="about-text">
-          <h3>Web Developer</h3>
-          <p>I am a dedicated web development student with a passion for creating modern and user-friendly websites. My journey in web development started with a strong interest in both design and technology. I believe in writing clean, efficient code and creating intuitive user experiences.</p>
-          <div class="btn-box">
-            <a href="#" class="btn" download>Download CV</a>
+    <main>
+      <section class="hero" id="start">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Frontendutvecklare i Sverige</p>
+          <h1>Jag bygger webb som känns <em>enkel.</em></h1>
+          <p class="intro">
+            Hej, jag heter Khalid. Jag studerar webbutveckling och skapar moderna,
+            användarvänliga digitala upplevelser.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projekt">Se mina projekt</a>
+            <a class="text-link" href="#kontakt">Kontakta mig <span>↗</span></a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="skills" id="skills">
-      <h2 class="heading">My <span>Skills</span></h2>
-      <div class="skills-container">
-        <div class="skills-box">
-          <h3>Frontend Development</h3>
-          <div class="skills-content">
-            <div class="progress">
-              <h3>HTML <span>90%</span></h3>
-              <div class="bar"><span style="width: 90%"></span></div>
+        <div class="portrait-wrap reveal">
+          <div class="portrait-backdrop"></div>
+          <img
+            class="portrait"
+            src="/src/assets/bild1.jpg"
+            alt="Porträtt av Khalid Mahmoud"
+            width="750"
+            height="1333"
+          />
+          <p class="portrait-note">Nyfiken, noggrann<br />och redo att lära.</p>
+        </div>
+      </section>
+
+      <section class="about section" id="om">
+        <p class="section-number">01 / Om mig</p>
+        <div class="about-grid">
+          <h2 class="reveal">Design och kod,<br />med människan i fokus.</h2>
+          <div class="about-copy reveal">
+            <p>
+              Jag är webbutvecklingsstudent med ett stort intresse för samspelet
+              mellan teknik och form. För mig är en bra webbplats tydlig, snabb och
+              behaglig att använda.
+            </p>
+            <p>
+              Jag tycker om att förvandla idéer till genomtänkta gränssnitt och
+              utvecklas hela tiden genom nya projekt och utmaningar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="kompetenser">
+        <p class="section-number">02 / Kompetenser</p>
+        <div class="skills-heading">
+          <h2 class="reveal">Verktyg jag arbetar med.</h2>
+          <p class="reveal">En stabil grund för moderna webbupplevelser.</p>
+        </div>
+        <div class="skill-list">
+          <article class="skill-card reveal">
+            <span>01</span>
+            <h3>HTML</h3>
+            <p>Semantisk struktur som fungerar för både människor och sökmotorer.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>02</span>
+            <h3>CSS</h3>
+            <p>Responsiva layouter, tydlig typografi och genomtänkta detaljer.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>03</span>
+            <h3>JavaScript</h3>
+            <p>Interaktivitet och funktion som gör upplevelsen levande.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>04</span>
+            <h3>React</h3>
+            <p>Återanvändbara komponenter för moderna webbapplikationer.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section" id="projekt">
+        <div class="projects-heading">
+          <div>
+            <p class="section-number">03 / Projekt</p>
+            <h2 class="reveal">Utvalda arbeten.</h2>
+          </div>
+          <p class="reveal">Projekt inom fullstack, e-handel och React.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-visual project-visual-one">
+              <span>Examensarbete</span>
+              <strong>01</strong>
             </div>
-            <div class="progress">
-              <h3>CSS <span>85%</span></h3>
-              <div class="bar"><span style="width: 85%"></span></div>
+            <div class="project-info">
+              <div>
+                <h3>Digital Invitations</h3>
+                <p>React · Node.js · MySQL · Stripe</p>
+              </div>
+              <div class="project-links">
+                <a href="https://digital-invitations-iota.vercel.app" target="_blank" rel="noreferrer">Live ↗</a>
+                <a href="https://github.com/Khalidkmkm/digital-invitations" target="_blank" rel="noreferrer">Kod ↗</a>
+              </div>
             </div>
-            <div class="progress">
-              <h3>JavaScript <span>75%</span></h3>
-              <div class="bar"><span style="width: 75%"></span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual project-visual-two">
+              <span>E-handel</span>
+              <strong>02</strong>
             </div>
-            <div class="progress">
-              <h3>React <span>70%</span></h3>
-              <div class="bar"><span style="width: 70%"></span></div>
+            <div class="project-info">
+              <div>
+                <h3>The Webshop</h3>
+                <p>TypeScript · SCSS · Vite</p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Khalidkmkm/the-webshop-webshopp" target="_blank" rel="noreferrer">Kod ↗</a>
+              </div>
             </div>
-          </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual project-visual-three">
+              <span>React-app</span>
+              <strong>03</strong>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>The Zoo</h3>
+                <p>React · TypeScript · API · SCSS</p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Khalidkmkm/the-zoo" target="_blank" rel="noreferrer">Kod ↗</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="projects" id="projects">
-      <h2 class="heading">Latest <span>Projects</span></h2>
-      <div class="projects-container">
-        <div class="projects-box">
-          <img src="src/assets/project1.jpg" alt="Project 1" loading="lazy">
-          <div class="projects-layer">
-            <h4>Web Design</h4>
-            <p>Description of your first project goes here</p>
-            <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+      <section class="contact section" id="kontakt">
+        <p class="section-number">04 / Kontakt</p>
+        <div class="contact-inner reveal">
+          <p>Har du en idé eller vill du bara säga hej?</p>
+          <h2>Låt oss skapa<br /><em>något bra.</em></h2>
+          <div class="contact-links">
+            <a class="button button-light" href="mailto:KhalidM143@outlook.com">Skicka ett mejl</a>
+            <a
+              class="text-link light"
+              href="https://github.com/Khalidkmkm"
+              target="_blank"
+              rel="noreferrer"
+            >GitHub <span>↗</span></a>
           </div>
         </div>
-        <div class="projects-box">
-          <img src="src/assets/project2.jpg" alt="Project 2" loading="lazy">
-          <div class="projects-layer">
-            <h4>Web Application</h4>
-            <p>Description of your second project goes here</p>
-            <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-        <div class="projects-box">
-          <img src="src/assets/project3.jpg" alt="Project 3" loading="lazy">
-          <div class="projects-layer">
-            <h4>Web Development</h4>
-            <p>Description of your third project goes here</p>
-            <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-      <form action="#" method="POST">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email Address" required>
-        </div>
-        <div class="input-box">
-          <input type="tel" placeholder="Mobile Number">
-          <input type="text" placeholder="Subject" required>
-        </div>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2024 by Khalid Mahmoud | All Rights Reserved.</p>
-      </div>
-      <div class="footer-iconTop">
-        <a href="#home" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
-      </div>
+    <footer>
+      <p>© <span id="year"></span> Khalid Mahmoud</p>
+      <a href="#start">Till toppen ↑</a>
     </footer>
 
     <script type="module" src="/src/main.js"></script>
